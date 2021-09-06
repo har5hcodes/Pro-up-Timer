@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <button type="button" onclick="setTime(this.innerHTML)">1</button>
+            <button type="button" onclick="setTime(this.innerHTML)">15</button>
+            <button type="button" onclick="setTime(this.innerHTML)">25</button>
+            <button type="button" onclick="setTime(this.innerHTML)">30</button>
+            <button type="button" onclick="setTime(this.innerHTML)">45</button>
+            <button type="button" onclick="setTime(this.innerHTML)">50</button>
+        </aside>
+
+        <main>
+            <div id="countdown">00:00</div>
+            <button id="start-btn" onclick="startTimer()">START</button>
+            <div class="motto">and stick to the plan.</div>
+        </main>
+
+
+        <!-- Social Media Links -->
+        <footer>
+            <a href="#">Github</a>
+            <a href="https://www.linkedin.com/in/harshavardhanputta/">LinkedIn</a>
+            <a href="https://www.instagram.com/harshwandr/">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100040884662231">Facebook</a>
+        </footer>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
