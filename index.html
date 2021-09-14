@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="light">
     <div class="container">
+        <button type="button" id="swap-theme" onclick="swapTheme()">Swap Themes</button>
+
         <aside>
             <button type="button" onclick="setTime(this.innerHTML)">5</button>
             <button type="button" onclick="setTime(this.innerHTML)">15</button>
@@ -24,20 +26,34 @@
         </aside>
 
         <main>
-            <div id="countdown">00:00</div>
+
+            <div id="countdownDisplay">00:00</div>
             <button id="start-btn" onclick="startTimer()">START</button>
             <div class="motto">and stick to the plan.</div>
         </main>
 
 
         <!-- Social Media Links -->
-        <footer>
-            <a href="#">Github</a>
-            <a href="https://www.linkedin.com/in/harshavardhanputta/">LinkedIn</a>
-            <a href="https://www.instagram.com/harshwandr/">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=100040884662231">Facebook</a>
+
+
+        <footer id="footer">
+
+            <button class="links" onclick="window.location.href = 'https://github.com/har5hcodes">
+                Github
+            </button>
+            <button class="links" onclick="window.location.href = 'https://www.linkedin.com/in/harshavardhanputta/">
+                LinkedIn
+            </button>
+            <button class="links" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                Instagram
+            </button>
+            <button class="links"
+                onclick="window.location.href = 'https://www.facebook.com/profile.php?id=100040884662231">
+                Facebook
+            </button>
+
         </footer>
-    </div>
+
 
 </body>
 <script src="app.js"></script>
