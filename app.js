@@ -1,16 +1,23 @@
-let sec = 0;
-let min = 0;
-let display = document.getElementById("countdown");
 
+
+
+
+// Function to display two digits when number less than 10
 function makeMeTwoDigits(n) {
     return (n < 10 ? "0" : "") + n;
 }
 
+
+// Set Timer
 function setTime(mins) {
-    min = mins;
+    const min = mins;
+    const sec = 0;
     display.textContent =
         makeMeTwoDigits(min) + ":" + makeMeTwoDigits(sec);
 }
+
+// Start Timer
+const display = document.getElementById("countdownDisplay");
 
 function startCountdown(duration, display) {
     let timer = duration, minutes, seconds;
@@ -28,4 +35,20 @@ function startCountdown(duration, display) {
 function startTimer() {
     let durationTime = 60 * min;
     startCountdown(durationTime, display);
+}
+
+// Change color theme
+// const colors = ["red", "blue", "green", "yellow"];
+// const colorBtn = document.getElementById("color-theme");
+
+// colorBtn.addEventListener("click", () => {
+//     const randomNumber = 2;
+//     document.body.style.backgroundColor = colors[randomNumber];
+// })
+
+
+// Dark theme 
+function swapTheme() {
+    const element = document.body;
+    element.classList.toggle("dark");
 }
